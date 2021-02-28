@@ -84,6 +84,7 @@ ul {
 .margin-x{
     padding: 0 50px;
 }
+/* Nav section stard */
 .top-prenav{
     background-color: var(--black-main);
     padding: 10px 50px ;
@@ -94,4 +95,10 @@ ul {
 .navbar{
     background-color: var(--main-color);
 }
+.dropdown-menu{
+    position: absolute;
+    right: 50px;
+    left: 70%;
+}
+/* Nav section End */
 

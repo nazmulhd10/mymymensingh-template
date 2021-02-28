@@ -13,6 +13,8 @@ $(document).ready(function () {
         }
     });
 
+    // $(".dropdown-toggle").dropdown();
+
 
 
     // popup video
