@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+/*
+***********************************
+* Template Name: Fiyama - Multipurpose Resposnive HTML5 Theme
+* Author Name: Themeforest Author Name
+* Support: Themeforest email 
+* Version: 1.0.0
+
+* This file contains the styling for the actual theme, this is the file you need to edit to change the look of the theme.
+
+The contents of This file are outlined below >>>>
+
+*** SEARCH EACH SECTION AS IT COMMENTS, YOU WILL GET THE RIGHT SECTION.
+
+**************************************************
+**************************************************
+*** CSS TABLE
+
+01. IMPORT CSS
+02. DEFAULT CSS
+03. PRELOADER CSS
+04. BTM TO TOP CSS
+05. SCROLLBAR CHANGE CSS
+
+ */
+/*-----------------------------------
+01. IMPORT CSS
+-------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Rajdhani:wght@300;500;700&display=swap');
+
+
+/*-----------------------------------
+02. DEFAULT CSS
+-------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+}
+p{
+    margin: 0;
+    padding: 0;
+    line-height: 23px
+}
+a, a:hover, a:active, a:visited, a:focus{
+    text-decoration: none
+}
+a{
+    display: inline-block
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+ul li{
+    display: inline-block
+}
+.space{
+    padding: 100px 0
+}
+.space-top{
+    padding-top: 100px
+}
+.space-btm{
+    padding-bottom: 100px
+}
+
+.df-btn{
+    display: inline-block;
+    padding: 14px 40px;
+    background: #1975C4;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 7px;
+    transition: 0.3s ease-in-out
+}
+.df-btn span{
+    margin: 0 7px
+}
+.df-btn:hover{
+    background: red;
+    color: #fff;
+    transition: 0.3s ease-in-out
+}
+/*-----------------------------------
+03. PRELOADER CSS
+-------------------------------------*/
+.fiyama-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #1975C5;
+    z-index: 9999999999
+}
+
+.fiyama-loader {
+    width: 100px;
+    height: 100px;
+    margin: 44vh auto;
+    border-radius: 50%;
+    position: relative
+}
+
+.fiyama-loader .fiyama-inner {
+    width: 100%;
+    height: 100%;
+    border: 50px solid transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-top-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: 0.3s spin infinite linear
+}
+
+.fiyama-loader .fiyama-inner:nth-child(1) {
+    border-left-color: #fff;
+    opacity: 0.25
+}
+
+.fiyama-loader .fiyama-inner:nth-child(2) {
+    animation-direction: reverse;
+    animation-duration: 2.5s
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+/*-----------------------------------
+04. BTM TO TOP CSS
+-------------------------------------*/
+a.btm-to-top {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #fff;
+    background: #2374F8;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 25px;
+    bottom: 40px;
+    z-index: 999999999
+}
+/*-----------------------------------
+04. BTM TO TOP CSS
+-------------------------------------*/
+.btm-to-top{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background: #1975C5;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    line-height: 29px;
+    display: none
+}
+.btm-to-top:hover{
+    color: #fff;
+    background: red
+}
+
+/*-----------------------------------
+05. SCROLLBAR CHANGE CSS
+-------------------------------------*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1975C5;
+}
+
+::-moz-selection {
+    background: #1975C5;
+    color: #fff
+}
+
+::selection {
+    background: #1975C5;
+    color: #fff
+}
+
+/* header section stard */
+.header {
+	
+}
+
+.nav-tnsparent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.navbar{
+    color: white;
+}
+
+
+
+.socal-icon-header i:hover{
+    color: #fed501;
+}
+.header-call {
+	padding-right: 30px;
+}
+.call-text{
+    font-size: 13px;
+    text-align: right;
+}
+.phone-number{
+    font-size: 22px;
+    color: #fed501;
+}
+/* header section end */
+/* slider section stard */
+.slider-bg{
+	background-color: #000000;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/slide-1.jpg);
+    background-position: center;
+	background-size: cover;
+	color: #ffffff;
+    height: 90vh;
+}
+/* slider section end */
+
+
+
+/*-----------------------------------
+04. BTM TO TOP CSS
+-------------------------------------*/
+
+
+
+/*
+font-family: 'Kanit', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
