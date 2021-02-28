@@ -48,20 +48,10 @@ body {
 }
 
 :root {
-    --main-color: #7857fe;
-    --color-1: #e91e63;
-    --color-2: #f5ae10;
-    --color-3: #09d69c;
-    --bg-dark: #2b2c2f;
-    --main-to-dark-color: var(--main-color);
-    --dark-to-main-color: var(--bg-dark);
-    --shadaw-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
-    --shadaw-black-300: 0 5px 15px rgba(0, 0, 0, 0.3);
-    --black-900: #000000;
-    --black-400: #555555;
-    --black-100: #f7f7f7;
+    --main-color: #FF6F61;
+    --black-main: #000000;
+    --black-400: #F3F6FF;
     --black-000: #ffffff;
-    --black-alpha-100: rgba(0, 0, 0, 05);
 }
 
 
@@ -90,5 +80,18 @@ a:hover {
 
 ul {
     list-style: none;
+}
+.margin-x{
+    padding: 0 50px;
+}
+.top-prenav{
+    background-color: var(--black-main);
+    padding: 10px 50px ;
+}
+.top-prenav span{
+    color: var(--main-color);
+}
+.navbar{
+    background-color: var(--main-color);
 }
 
