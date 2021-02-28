@@ -81,24 +81,147 @@ a:hover {
 ul {
     list-style: none;
 }
-.margin-x{
+
+.margin-x {
     padding: 0 50px;
 }
+
 /* Nav section stard */
-.top-prenav{
+.top-prenav {
     background-color: var(--black-main);
-    padding: 10px 50px ;
+    padding: 10px 50px;
 }
-.top-prenav span{
+
+.top-prenav span {
     color: var(--main-color);
 }
-.navbar{
+
+.navbar {
     background-color: var(--main-color);
 }
-.dropdown-menu{
+
+.dropdown-menu {
     position: absolute;
     right: 50px;
     left: 70%;
 }
-/* Nav section End */
 
+/* Top header section */
+.logo a {
+    color: var(--main-color);
+}
+
+.topheader.form-group {
+    margin-bottom: 25px;
+    border: 1px solid green;
+}
+
+.topheader .form-control {
+    transition: all 0.5s ease;
+    border: 1px solid var(--main-color) !important;
+}
+
+.topheader .form-control:focus {
+    border: 1px solid var(--main-color);
+    border-color: var(--main-color);
+    box-shadow: none;
+}
+
+.itonbox {}
+
+.itonbox a {
+    padding: 2px 7px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: right;
+}
+
+.itonbox span i {}
+
+/* hero section stard */
+.herosection {
+    background-color: var(--black-400);
+}
+
+.hero-menu {
+    background-color: var(--black-000);
+}
+
+.hero-menu ul {
+    padding: 39px 29px;
+    line-height: 32px;
+}
+
+.hero-menu ul li {
+    border-bottom: 1px solid var(--black-400);
+}
+
+.hero-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.hero-menu i {
+    color: var(--main-color);
+}
+
+.hero-menu a {
+    color: var(--black-main);
+}
+
+.carouselitem img {
+    height: 300px;
+}
+
+.owl-carousel .owl-dots {
+    margin: 0 15px;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--main-color);
+    position: absolute;
+    z-index: 1;
+    left: 42%;
+    bottom: 40px;
+}
+
+.owl-carousel button.owl-dot.active {
+    background-color: var(--main-color);
+}
+
+.owl-carousel button.owl-dot {
+    height: 15px;
+    width: 15px;
+    background-color: var(--black-400);
+    display: inline-block;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+
+.owl-prev {}
+
+.owl-prev span {
+    font-size: 20px;
+    position: absolute;
+    left: 10px;
+    top: 37%;
+    margin: 20px 20px;
+    background-color: var(--main-color);
+    height: 30px;
+    width: 30px;
+    color: white;
+}
+
+.owl-next {}
+
+.owl-next span {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 37%;
+    margin: 20px 20px;
+    background-color: var(--main-color);
+    height: 30px;
+    width: 30px;
+    color: white;
+}
