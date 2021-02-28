@@ -1,183 +1,146 @@
-(function ($) {
-    "use strict";
-    $(document).ready(function () {
-        /**************************************************
-            *** JS TABLE ***
-            ****************
-            
-            01. COUNTER UP JS
-            02. STICKY HEADER JS
-            03. MAIN SLIDER JS
-            04. AOS ANIMATION JS
-            05. MODAL VIDEO JS
-            06. MOBILE MENU JS
-            07. PRELOADER JS
-            08. BTM TO TOP JS
-            09. VANILLA TILT JS
-            10. PARALLAX JS
-            11. CLIENT SLIDER JS
-         */
+// preloder
+$(window).on("load", function () {
+    $(".preloder").fadeOut("slow");
+});
 
-        /************************************************
-            01. COUNTER UP JS
-         *************************************************/
-        $('.counter').counterUp({
-            delay: 10,
-            time: 3000
-        });
-
-
-        /************************************************
-            02. STICKY JS
-         *************************************************/
-        $(window).scroll(function () {
-            var sticky = $('.menu-class-for-sticky'),
-                scroll = $(window).scrollTop();
-            if (scroll < 200) sticky.removeClass('sticky');
-            else sticky.addClass('sticky').animate({
-                scrollTop: 0
-            }, 1000);
-        });
-
-        /************************************************
-            03. MAIN SLIDER JS
-        *************************************************/
-        $('.earp-hero-image-area-start, .earp-product-slider').owlCarousel({
-            animateOut: 'fadeOut',
-            animateIn: 'fadeIn',
-            loop: true,
-            margin: 0,
-            autoplay: true,
-            autoplayTimeout: 4500,
-            autoplayHoverPause: true,
-            nav: false,
-            dots: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                480: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                },
-                1200: {
-                    items: 1
-                }
-            }
-        });
-
-        // ************************************************
-            // slick slidr
-        // ************************************************
-        $('.slick-slider').slick({
-            slidesToShow: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            arrows: false,
-            dots: false,
-            fade: true,
-            speed: 3000,
-            infinite: true,
-            loop: true
-            
-        });
-
-
-        /************************************************
-            04. AOS ANIMATION JS
-        *************************************************/
-        AOS.init();
-
-
-        /************************************************
-            05. MODAL VIDEO JS
-        *************************************************/
-        $(".js-modal-btn").modalVideo();
-
-
-        /************************************************
-            06. MOBILE MENU JS
-        *************************************************/
-        $('.drawer').drawer();
-
-
-        /************************************************
-            07. PRELOADER JS
-        *************************************************/
-        setTimeout(function () {
-            $('.fiyama-preloader').fadeOut();
-        }, 5000);
-
-
-        /************************************************
-            08. BTM TO TOP JS
-        *************************************************/
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 600) {
-                $('.btm-to-top').show();
-            } else {
-                $('.btm-to-top').hide();
-            }
-        });
-
-
-
-        /************************************************
-            09. VANILLA TILT JS
-        *************************************************/
-        VanillaTilt.init(document.querySelectorAll(".mouse-move"), {
-            max: 25,
-            speed: 400
-        });
-
-        /************************************************
-            10. PARALLAX JS
-        *************************************************/
-        $('.earp-newslater-area-start').parallax({
-            imageSrc: 'assets/images/newslater-bg.png'
-        });
-
-
-        /************************************************
-            11. CLIENT SLIDER JS
-        *************************************************/
-        $('.earp-client-slider').owlCarousel({
-            animateOut: 'fadeOut',
-            animateIn: 'fadeIn',
-            loop: true,
-            margin: 0,
-            autoplay: true,
-            autoplayTimeout: 4500,
-            autoplayHoverPause: true,
-            nav: true,
-            dots: false,
-            navText: ["<i class='fal fa-angle-left'></i>", "<i class='fal fa-angle-right'></i>"],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                480: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                },
-                1200: {
-                    items: 1
-                }
-            }
-        });
-
-
-
-
+$(document).ready(function () {
+    // navbar sharink
+    $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 90) {
+            $(".navbar").addClass("navbar-shrink");
+        } else {
+            $(".navbar").removeClass("navbar-shrink");
+        }
     });
-}(jQuery));
+
+
+
+    // popup video
+    const videoSrc = $("#plear-1").attr("src");
+    $(".video-play-btn, .video-popup").on("click", function () {
+        if ($(".video-popup").hasClass("open")) {
+            $(".video-popup").removeClass("open");
+            $("#plear-1").attr("src", "")
+        } else {
+            $(".video-popup").addClass("open");
+            if ($("#plear-1").attr("src") == '') {
+                $("#plear-1").attr("src", videoSrc);
+            }
+        }
+    });
+    // feature carousel
+    $('.feature-corosel').owlCarousel({
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 3,
+            }
+        }
+    });
+    // screenshort carousel
+    $('.screenshort-crosel').owlCarousel({
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 4,
+            }
+        }
+    });
+    // testimonials carousel
+    $('.testimonials-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 3,
+            }
+        }
+    });
+    // team carousel
+    $('.team-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            600: {
+                items: 2,
+            },
+            1000: {
+                items: 3,
+            }
+        }
+    });
+    // page scroling sectin
+    $.scrollIt({
+        topOffset: -50
+    });
+    // navbar collapse 
+    $(".nav-link").on("click", function () {
+        $(".navbar-collapse").collapse("hide");
+    });
+
+    // toggle theme -dark and light theme
+    function toggleTheme() {
+        if (localStorage.getItem("shala-theme") !== null) {
+            if (localStorage.getItem("shala-theme") == "dark") {
+                $("body").addClass("dark");
+            } else {
+                $("body").removeClass("dark");
+            }
+        }
+        updateIcon();
+    }
+    toggleTheme();
+
+    $(".toggle-theme").on("click", function () {
+        $("body").toggleClass("dark");
+        if ($("body").hasClass("dark")) {
+            localStorage.setItem("shala-theme", "dark");
+        } else {
+            localStorage.setItem("shala-theme", "light");
+        }
+        updateIcon();
+    })
+
+    function updateIcon() {
+        if ($("body").hasClass("dark")) {
+            $(".toggle-theme i").removeClass("fa-moon");
+            $(".toggle-theme i").addClass("fa-sun")
+        } else {
+            $(".toggle-theme i").removeClass("fa-sun");
+            $(".toggle-theme i").addClass("fa-moon")
+        }
+    }
+
+
+});
