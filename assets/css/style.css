@@ -285,3 +285,57 @@ right: 16px;
 	border: 1px solid rgba(0,0,0,.15);
 	border-radius: .25rem;
 }
+.navbar {
+	background-color: var(--main-color);
+}
+
+.navbar ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+.navbar ul li {
+	display:inline-block;
+	background-color: var(--main-color);
+	}
+
+.navbar a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+.navbar a:hover{ 
+	background-color: var(--main-color); 
+}
+
+/* Hide Dropdowns by Default */
+.navbar ul ul{
+	display: none;
+	position: absolute; 
+}
+	
+/* Display Dropdowns on Hover */
+.navbar ul li:hover > ul{
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+.navbar ul ul li {
+	width:170px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+.navbar ul ul ul li{
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
