@@ -49,6 +49,7 @@ body {
 
 :root {
     --main-color: #FF6F61;
+    --main-color-100: #f46456;
     --black-main: #000000;
     --black-400: #F3F6FF;
     --black-000: #ffffff;
@@ -95,18 +96,68 @@ ul {
 .top-prenav span {
     color: var(--main-color);
 }
-.navbar ul li a{
-    text-transform: capitalize;
-}
 
 .navbar {
     background-color: var(--main-color);
 }
+
 .dropdown ul {
     background-color: var(--main-color);
 }
-.user ul{
-    background-color: #FF6F61;
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+.navbar ul li {
+    display: inline-block;
+    background-color: var(--main-color);
+}
+
+.navbar ul li a {
+    text-transform: capitalize;
+}
+
+.navbar a {
+    display: block;
+    padding: 0 10px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: var(--main-color-100);
+}
+
+/* Hide Dropdowns by Default */
+.navbar ul ul {
+    display: none;
+    position: absolute;
+}
+
+/* Display Dropdowns on Hover */
+.navbar ul li:hover>ul {
+    display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+.navbar ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+.navbar ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
 }
 
 
@@ -149,6 +200,7 @@ ul {
 .herosection {
     background-color: var(--black-400);
 }
+
 .has-search .form-control {
     padding-right: 2.375rem;
 }
@@ -164,7 +216,7 @@ ul {
     pointer-events: none;
     color: #aaa;
     top: 0;
-right: 16px;
+    right: 16px;
 }
 
 .hero-menu {
@@ -247,95 +299,46 @@ right: 16px;
     width: 40px;
     color: white;
 }
+
 /* brand section */
-.brand{
+.brand {
     background-color: var(--black-000);
 }
-.brand .caroselitem img{
+
+.brand .caroselitem img {
     padding: 0 10px;
 }
-@media (max-width:411px){
+
+@media (max-width:411px) {
     .owl-nav button.owl-next {
         display: none;
     }
-    .owl-nav button.owl-prev{
+
+    .owl-nav button.owl-prev {
         display: none;
     }
-    .owl-carousel button.owl-dot{
+
+    .owl-carousel button.owl-dot {
         display: none;
     }
 }
 
 .dropdown-menu {
-	position: absolute;
-	top: 100%;
-	/* left: 0; */
-	z-index: 1000;
-	display: none;
-	float: left;
-	/* min-width: 10rem; */
-	/* padding: .5rem 0; */
-	/* margin: .125rem 0 0; */
-	font-size: 1rem;
-	color: #212529;
-	text-align: left;
-	list-style: none;
-	background-color: #fff;
-	background-clip: padding-box;
-	border: 1px solid rgba(0,0,0,.15);
-	border-radius: .25rem;
-}
-.navbar {
-	background-color: var(--main-color);
-}
-
-.navbar ul {
-	padding: 0;
-  margin: 0;
-	list-style: none;
-	position: relative;
-	}
-	
-.navbar ul li {
-	display:inline-block;
-	background-color: var(--main-color);
-	}
-
-.navbar a {
-	display:block;
-	padding:0 10px;	
-	color:#FFF;
-	font-size:20px;
-	line-height: 60px;
-	text-decoration:none;
-}
-
-.navbar a:hover{ 
-	background-color: var(--main-color); 
-}
-
-/* Hide Dropdowns by Default */
-.navbar ul ul{
-	display: none;
-	position: absolute; 
-}
-	
-/* Display Dropdowns on Hover */
-.navbar ul li:hover > ul{
-	display:inherit;
-}
-	
-/* Fisrt Tier Dropdown */
-.navbar ul ul li {
-	width:170px;
-	float:none;
-	display:list-item;
-	position: relative;
-}
-
-/* Second, Third and more Tiers	*/
-.navbar ul ul ul li{
-	position: relative;
-	top:-60px; 
-	left:170px;
+    position: absolute;
+    top: 100%;
+    /* left: 0; */
+    z-index: 1000;
+    display: none;
+    float: left;
+    /* min-width: 10rem; */
+    /* padding: .5rem 0; */
+    /* margin: .125rem 0 0; */
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
 }
