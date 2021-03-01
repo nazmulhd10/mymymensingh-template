@@ -102,11 +102,13 @@ ul {
 .dropdown ul {
     background-color: var(--main-color);
 }
-.dropdown-menu {
-    position: absolute;
-    right: 50px;
-    left: 70%;
+.user ul{
+    background-color: #FF6F61;
 }
+/* .dropdown-menu {
+    position: absolute;
+    right: 5%;
+} */
 
 /* Top header section */
 .logo a {
