@@ -99,7 +99,9 @@ ul {
 .navbar {
     background-color: var(--main-color);
 }
-
+.dropdown ul {
+    background-color: var(--main-color);
+}
 .dropdown-menu {
     position: absolute;
     right: 50px;
@@ -109,6 +111,7 @@ ul {
 /* Top header section */
 .logo a {
     color: var(--main-color);
+    font-size: 2rem;
 }
 
 .topheader.form-group {
@@ -131,8 +134,8 @@ ul {
 
 .iconbox a {
     padding: 2px 7px;
-    border: 1px solid red;
-    color: red;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
     border-radius: 5px;
     margin: 5px;
     text-align: right;
@@ -217,28 +220,35 @@ right: 16px;
 
 .owl-prev {}
 
-.owl-prev span {
+.owl-nav button.owl-prev {
     font-size: 20px;
     position: absolute;
     left: 10px;
     top: 37%;
     margin: 20px 20px;
     background-color: var(--main-color);
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     color: white;
 }
 
 .owl-next {}
 
-.owl-next span {
+.owl-nav button.owl-next {
     font-size: 20px;
     position: absolute;
     right: 10px;
     top: 37%;
     margin: 20px 20px;
     background-color: var(--main-color);
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     color: white;
+}
+/* brand section */
+.brand{
+    background-color: var(--black-000);
+}
+.brand .caroselitem img{
+    padding: 0 10px;
 }

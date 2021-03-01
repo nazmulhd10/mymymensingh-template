@@ -36,6 +36,10 @@ $(document).ready(function () {
         autoplay: true,
         responsiveClass: true,
         nav: true,
+        navText: [
+            '<',
+            '>'
+        ],
         responsive: {
             0: {
                 items: 1,
@@ -45,6 +49,27 @@ $(document).ready(function () {
             },
             1000: {
                 items: 1,
+            }
+        }
+    });
+    // brand carousel
+    $('.brand-carousel').owlCarousel({
+        loop: true,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        dots: false,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            600: {
+                items: 4,
+            },
+            1000: {
+                items: 6,
             }
         }
     });
