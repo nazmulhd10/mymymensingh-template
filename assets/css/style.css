@@ -127,9 +127,9 @@ ul {
     box-shadow: none;
 }
 
-.itonbox {}
+.iconbox {}
 
-.itonbox a {
+.iconbox a {
     padding: 2px 7px;
     border: 1px solid red;
     color: red;
@@ -138,11 +138,28 @@ ul {
     text-align: right;
 }
 
-.itonbox span i {}
+.iconbox span i {}
 
 /* hero section stard */
 .herosection {
     background-color: var(--black-400);
+}
+.has-search .form-control {
+    padding-right: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+    top: 0;
+right: 16px;
 }
 
 .hero-menu {
