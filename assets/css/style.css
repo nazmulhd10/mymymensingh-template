@@ -118,7 +118,7 @@ ul {
 }
 
 .navbar ul li a {
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .navbar a {
@@ -182,8 +182,6 @@ ul {
     border-color: var(--main-color);
     box-shadow: none;
 }
-
-.iconbox {}
 
 .iconbox a {
     padding: 2px 7px;
