@@ -95,6 +95,9 @@ ul {
 .top-prenav span {
     color: var(--main-color);
 }
+.navbar ul li a{
+    text-transform: capitalize;
+}
 
 .navbar {
     background-color: var(--main-color);
@@ -105,10 +108,7 @@ ul {
 .user ul{
     background-color: #FF6F61;
 }
-/* .dropdown-menu {
-    position: absolute;
-    right: 5%;
-} */
+
 
 /* Top header section */
 .logo a {
@@ -203,7 +203,7 @@ right: 16px;
     color: var(--main-color);
     position: absolute;
     z-index: 1;
-    left: 42%;
+    left: 40%;
     bottom: 40px;
 }
 
@@ -229,8 +229,8 @@ right: 16px;
     top: 37%;
     margin: 20px 20px;
     background-color: var(--main-color);
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     color: white;
 }
 
@@ -243,8 +243,8 @@ right: 16px;
     top: 37%;
     margin: 20px 20px;
     background-color: var(--main-color);
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     color: white;
 }
 /* brand section */
@@ -253,4 +253,15 @@ right: 16px;
 }
 .brand .caroselitem img{
     padding: 0 10px;
+}
+@media (max-width:411px){
+    .owl-nav button.owl-next {
+        display: none;
+    }
+    .owl-nav button.owl-prev{
+        display: none;
+    }
+    .owl-carousel button.owl-dot{
+        display: none;
+    }
 }
