@@ -309,7 +309,6 @@ ul {
     left: 40%;
     bottom: 40px;
 }
-
 .owl-carousel button.owl-dot.active {
     background-color: var(--main-color);
 }
@@ -322,8 +321,6 @@ ul {
     margin: 0 4px;
     border-radius: 50%;
 }
-
-
 .owl-nav button.owl-prev {
     font-size: 20px;
     position: absolute;

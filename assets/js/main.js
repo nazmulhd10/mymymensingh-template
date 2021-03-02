@@ -1,15 +1,5 @@
-// preloder
-$(window).on("load", function () {
-    $(".preloder").fadeOut("slow");
-});
-
 $(document).ready(function () {
-    // navbar sharink
-
-
-
-
-    // feature carousel
+    // hero section carousel
     $('.image-carousel').owlCarousel({
         loop: true,
         margin: 0,
@@ -53,6 +43,4 @@ $(document).ready(function () {
             }
         }
     });
-
-
 });
