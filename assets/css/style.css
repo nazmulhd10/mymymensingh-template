@@ -136,6 +136,7 @@ ul {
 
 .navbar ul li a.active {
     color: var(--black-main);
+    background-color: var(--main-color-100);
 }
 
 /* Hide Dropdowns by Default */
