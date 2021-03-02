@@ -133,7 +133,8 @@ ul {
 .navbar a:hover {
     background-color: var(--main-color-100);
 }
-.navbar ul li a.active{
+
+.navbar ul li a.active {
     color: var(--black-main);
 }
 
@@ -150,16 +151,17 @@ ul {
 
 /* Fisrt Tier Dropdown */
 .navbar ul ul li {
-	float: none;
-	display: list-item;
-	position: relative;
+    float: none;
+    display: list-item;
+    position: relative;
 }
+
 .navbar-nav .dropdown-menu {
-	position: absolute;
-	float: none;
-	left: 0;
-	right: 0;
-	top: 55px;
+    position: absolute;
+    float: none;
+    left: 0;
+    right: 0;
+    top: 55px;
 }
 
 /* Second, Third and more Tiers	*/
@@ -168,23 +170,27 @@ ul {
     top: -60px;
     left: 170px;
 }
+
 @media (max-width:1166px) {
-    .nav-item a{
+    .nav-item a {
         font-size: 18px;
     }
 }
+
 @media (max-width:1070px) {
-    .nav-item a{
+    .nav-item a {
         font-size: 16px;
     }
 }
+
 @media (max-width:880px) {
-    .nav-item a{
+    .nav-item a {
         font-size: 13px;
     }
 }
+
 @media (max-width:766px) {
-    .nav-item a{
+    .nav-item a {
         font-size: 18px;
     }
 }
@@ -194,18 +200,21 @@ ul {
     color: var(--main-color);
     font-size: 40px;
 }
+
 @media (max-width:394px) {
-    .logo a{
+    .logo a {
         font-size: 30px;
     }
 }
+
 @media (max-width:306px) {
-    .logo a{
+    .logo a {
         font-size: 25px;
     }
 }
+
 @media (max-width:270px) {
-    .logo a{
+    .logo a {
         font-size: 20px;
     }
 }
@@ -287,6 +296,7 @@ ul {
 
 .carouselitem img {
     height: 300px;
+    width: 100%;
 }
 
 .owl-carousel .owl-dots {
@@ -313,7 +323,6 @@ ul {
     border-radius: 50%;
 }
 
-.owl-prev {}
 
 .owl-nav button.owl-prev {
     font-size: 20px;
@@ -327,7 +336,6 @@ ul {
     color: white;
 }
 
-.owl-next {}
 
 .owl-nav button.owl-next {
     font-size: 20px;
@@ -367,13 +375,9 @@ ul {
 .dropdown-menu {
     position: absolute;
     top: 100%;
-    /* left: 0; */
     z-index: 1000;
     display: none;
     float: left;
-    /* min-width: 10rem; */
-    /* padding: .5rem 0; */
-    /* margin: .125rem 0 0; */
     font-size: 1rem;
     color: #212529;
     text-align: left;
