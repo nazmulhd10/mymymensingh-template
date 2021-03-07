@@ -132,6 +132,8 @@ ul {
 
 .navbar a:hover {
     background-color: var(--main-color-100);
+    color: var(--black-main);
+    transition: all 0.3 ease;
 }
 
 .navbar ul li a.active {
