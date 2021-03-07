@@ -237,27 +237,35 @@ ul {
     border-color: var(--main-color);
     box-shadow: none;
 }
-.wish-icon-top,.card-icon-top{
+
+.wish-icon-top,
+.card-icon-top {
     margin: 5px;
     padding: 5px 0px;
     border-radius: 10px;
     border: 1px solid var(--main-color);
 }
-.wish-icon-top:hover,.card-icon-top:hover{
+
+.wish-icon-top:hover,
+.card-icon-top:hover {
     background-color: var(--main-color-100);
     /* transition: all 0.3s ease; */
 }
-.wish-icon-top:hover a{ 
+
+.wish-icon-top:hover a {
     color: var(--black-000);
-    
+
 }
-.card-icon-top:hover a{ 
+
+.card-icon-top:hover a {
     color: var(--black-000);
-    
+
 }
+
 .form-group {
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
+
 .iconbox a {
     padding: 2px 7px;
     /* border: 1px solid var(--main-color); */
@@ -332,6 +340,7 @@ ul {
     left: 40%;
     bottom: 40px;
 }
+
 .owl-carousel button.owl-dot.active {
     background-color: var(--main-color);
 }
@@ -344,6 +353,7 @@ ul {
     margin: 0 4px;
     border-radius: 50%;
 }
+
 .owl-nav button.owl-prev {
     font-size: 20px;
     position: absolute;
